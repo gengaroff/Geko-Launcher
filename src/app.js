@@ -3,7 +3,7 @@
  * @license CC-BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/
  */
 
- const clientId = '1039548864618831872';
+ const clientId = '905506754677325914';
  const DiscordRPC = require('discord-rpc');
  const RPC = new DiscordRPC.Client({ transport: 'ipc'});
  
@@ -12,20 +12,15 @@
  async function setActivity() {
     if (!RPC) return;
     RPC.setActivity({
-        details: `Servidor Minecraft Rol`,
-        state: `Iniciando una Aventura!`,
+        details: `Jugando a "MiniGamesMind"`,
         startTimestamp: Date.now(),
-        largeImageKey: 'logo-destiny',
-        largeImageText: `Minecraft DestinyRPG`,
+        largeImageKey: 'minigamesmind1',
+        largeImageText: `ThStudios,GekoStudios,Tryfobia`,
         instance: false,
         buttons: [
             {
-                label: `Discord DestinyRPG`,
-                url: `https://discord.gg/bUXXsKGnXH`,
-            },
-            {
-                label: `Youtube DestinyRPG`,
-                url: `https://www.youtube.com/channel/UC5uKqUqfw-EfDZCRA88u5Mg`,
+                label: `Discord Geko Game Studio`,
+                url: `https://discord.gg/WWBTFHvJVR`,
             }
         ]
     });

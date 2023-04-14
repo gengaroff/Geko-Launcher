@@ -191,7 +191,7 @@ class Login {
         let mojangBtn = document.querySelector('.mojang')
         let passBtn = document.querySelector('.Pass')
         passBtn.remove()
-        mojangBtn.innerHTML = "Version Crack"
+        mojangBtn.innerHTML = "Version No Premium"
 
         mojangBtn.addEventListener("click", () => {
             document.querySelector(".login-card").style.display = "none";

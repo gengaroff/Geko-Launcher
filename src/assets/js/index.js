@@ -22,9 +22,9 @@ class Splash {
 
     async startAnimation() {
         let splashes = [
-            { "message": "Instalando RPG...", "author": "iSoul" },
-            { "message": "Cargando Mods...", "author": "iSoul" },
-            { "message": "Cargando Launcher...", "author": "iSoul" }
+            { "message": "Descargando Api de Juegos...", "author": "GekoXD" },
+            { "message": "Cargando Configuraciones...", "author": "GekoXD" },
+            { "message": "Cargando Launcher...", "author": "GekoXD" }
         ]
         let splash = splashes[Math.floor(Math.random() * splashes.length)];
         this.splashMessage.textContent = splash.message;
@@ -54,7 +54,7 @@ class Splash {
         })
 
         ipcRenderer.on('updateAvailable', () => {
-            this.setStatus(`Actualización disponible !`);
+            this.setStatus(`Actualización necesita un nuevo launcher`);
             this.toggleProgress();
             ipcRenderer.send('start-update');
         })

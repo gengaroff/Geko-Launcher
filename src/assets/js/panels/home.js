@@ -90,17 +90,17 @@ class Home {
     }
     async dynmapbtn() {
         document.querySelector('.dynmap').addEventListener('click', async() => {
-            require('electron').shell.openExternal("http://144.217.65.58:30021")
+            require('electron').shell.openExternal("https://discord.gg/WWBTFHvJVR")
         })}
     
     async discordbtn() {
     document.querySelector('.git').addEventListener('click', async() => {
-        require('electron').shell.openExternal("https://discord.gg/bUXXsKGnXH")
+        require('electron').shell.openExternal("https://discord.gg/JXyEvK2p37")
     })}
 
     async websitebtn() {
         document.querySelector('.web').addEventListener('click', async() => {
-            require('electron').shell.openExternal("https://destinyservers.wixsite.com/destinyrpg")
+            require('electron').shell.openExternal("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
         })}
 
     async initLaunch() {
